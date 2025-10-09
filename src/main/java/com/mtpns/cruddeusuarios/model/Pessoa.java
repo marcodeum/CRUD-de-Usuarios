@@ -1,30 +1,29 @@
-package Pacotinho;
-
+package com.mtpns.cruddeusuarios.model;
 import java.util.Date;
 
 public class Pessoa {
     private String nome;
     private String sobrenome;
-    private Date dataNasc;
+    private Date dataNascimento;
     private int idade;
-    private int telefone;
+    private String telefone;
     private char sexo;
     private String endereço;
 
     public Pessoa() {
         this.nome = "";
         this.sobrenome = "";
-        this.dataNasc = new Date();
+        this.dataNascimento = new Date();
         this.idade = 0;
-        this.telefone = 0;
+        this.telefone = "";
         this.sexo = ' ';
         this.endereço = "";
     }
 
-    public Pessoa(String nome, String sobrenome, Date dataNasc, int telefone, char sexo, String endereço) {
+    public Pessoa(String nome, String sobrenome, Date dataNascimento, String telefone, char sexo, String endereço) {
         this.nome = nome;
         this.sobrenome = sobrenome;
-        this.dataNasc = dataNasc;
+        this.dataNascimento = dataNascimento;
         this.telefone = telefone;
         this.sexo = sexo;
         this.endereço = endereço;
@@ -35,10 +34,10 @@ public class Pessoa {
     }
 
     public Date getDataNasc() {
-        return dataNasc;
+        return dataNascimento;
     }
 
-    public int getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
@@ -54,8 +53,8 @@ public class Pessoa {
         return sobrenome;
     }
 
-    public void setDataNasc(Date dataNasc) {
-        this.dataNasc = dataNasc;
+    public void setDataNasc(Date dataNascimento) {
+        this.dataNascimento = dataNascimento;
     }
 
     public void setEndereço(String endereço) {
@@ -74,13 +73,13 @@ public class Pessoa {
         this.sobrenome = sobrenome;
     }
 
-    public void setTelefone(int telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
     public int getIdade() {
         Date currentDate = new Date();
-        this.idade = currentDate.getYear() - this.dataNasc.getYear();
+        this.idade = currentDate.getYear() - this.dataNascimento.getYear();
         return this.idade;
     }
 

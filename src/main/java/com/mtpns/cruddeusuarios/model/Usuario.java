@@ -1,14 +1,14 @@
-package Pacotinho;
+package com.mtpns.cruddeusuarios.model;
 
 import java.util.Date;
 
-public class Usuario extends Pessoa{
+public class Usuario extends Pessoa {
     private String login;
     private String senha;
     private String email;
 
-    public Usuario(String nome, String sobrenome, Date dataNasc, int telefone, char sexo, String endereço, String login, String senha, String email) {
-        super(nome, sobrenome, dataNasc, telefone, sexo, endereço);
+    public Usuario(String nome, String sobrenome, Date dataNascimento, String telefone, char sexo, String endereço, String login, String senha, String email)  {
+        super(nome, sobrenome, dataNascimento, telefone, sexo, endereço);
         this.login = login;
         this.senha = senha;
         this.email = email;
@@ -45,11 +45,8 @@ public class Usuario extends Pessoa{
     public void setEmail(String email) {
         this.email = email;
     }
+
     public boolean isEqual(String senha){
         return senha.equals(this.senha);
-    }
-    public String info(){
-        return "Dados do usuário: \n"+
-        super.info() + "\n" + this.email + "\n" + "Username: " + this.login;
     }
 }
