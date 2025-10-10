@@ -42,5 +42,4 @@ public class UsuarioService {
         }catch (SQLException e){}
     }
     public List<Usuario> listarUsuarios(){return usuarios;}
-
 }

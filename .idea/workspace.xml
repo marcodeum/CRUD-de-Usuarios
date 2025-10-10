@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35c2df5e-c888-48d0-a188-0a470469201d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/model/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/model/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/model/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/service/DataBaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/service/DataBaseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/service/UsuarioService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +41,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Launcher.executor": "Run",
+    "Application.Launcher.executor": "Debug",
     "Application.Main.executor": "Run",
     "Maven.CRUD_USUARIOS_JAVA [clean].executor": "Run",
     "Maven.CRUD_USUARIOS_JAVA [install].executor": "Run",
@@ -60,7 +56,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
   <component name="RecentsManager">
