@@ -3,12 +3,14 @@ package com.mtpns.cruddeusuarios.model;
 import java.util.Date;
 
 public class Usuario extends Pessoa {
+    private int id;
     private String login;
     private String senha;
     private String email;
 
-    public Usuario(String nome, String sobrenome, Date dataNascimento, String telefone, char sexo, String endereço, String login, String senha, String email)  {
+    public Usuario(int id, String nome, String sobrenome, Date dataNascimento, String telefone, char sexo, String endereço, String login, String senha, String email)  {
         super(nome, sobrenome, dataNascimento, telefone, sexo, endereço);
+        this.id = id;
         this.login = login;
         this.senha = senha;
         this.email = email;
@@ -16,14 +18,24 @@ public class Usuario extends Pessoa {
 
     public Usuario(){
         super();
+        this.id = 0;
         this.login = "";
         this.senha = "";
         this.email = "";
     }
-    public Usuario(String login, String senha, String email) {
+    public Usuario(String login, String senha, String email, int id) {
+        this.id = id;
         this.login = login;
         this.senha = senha;
         this.email = email;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getLogin() {

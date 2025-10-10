@@ -8,7 +8,7 @@ public class Pessoa {
     private int idade;
     private String telefone;
     private char sexo;
-    private String endereço;
+    private String endereco;
 
     public Pessoa() {
         this.nome = "";
@@ -17,16 +17,16 @@ public class Pessoa {
         this.idade = 0;
         this.telefone = "";
         this.sexo = ' ';
-        this.endereço = "";
+        this.endereco = "";
     }
 
-    public Pessoa(String nome, String sobrenome, Date dataNascimento, String telefone, char sexo, String endereço) {
+    public Pessoa(String nome, String sobrenome, Date dataNascimento, String telefone, char sexo, String endereco) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.dataNascimento = dataNascimento;
         this.telefone = telefone;
         this.sexo = sexo;
-        this.endereço = endereço;
+        this.endereco = endereco;
     }
 
     public char getSexo() {
@@ -42,7 +42,7 @@ public class Pessoa {
     }
 
     public String getEndereço() {
-        return endereço;
+        return endereco;
     }
 
     public String getNome() {
@@ -53,12 +53,12 @@ public class Pessoa {
         return sobrenome;
     }
 
-    public void setDataNasc(Date dataNascimento) {
+    public void setDataNascimento(Date dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
-    public void setEndereço(String endereço) {
-        this.endereço = endereço;
+    public void setEndereco(String endereço) {
+        this.endereco = endereço;
     }
 
     public void setNome(String nome) {
@@ -93,6 +93,6 @@ public class Pessoa {
     }
 
     public String info(){
-        return nome +" "+sobrenome+" | "+getIdade()+" anos | "+telefone+" | "+ getFullSexo() +"\n"+endereço;
+        return nome +" "+sobrenome+" | "+getIdade()+" anos | "+telefone+" | "+ getFullSexo() +"\n"+endereco;
     }
 }

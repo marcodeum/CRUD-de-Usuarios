@@ -5,22 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35c2df5e-c888-48d0-a188-0a470469201d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/controller/UserFormControler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/controller/UserListControler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/service/DataBaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/service/UsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CRUD-de-Usuarios.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pacotinho/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pacotinho/Pessoa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pacotinho/UsersController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pacotinho/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/model/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/model/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/model/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/service/DataBaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/service/DataBaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/service/UsuarioService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +51,7 @@
     "Maven.CRUD_USUARIOS_JAVA [install].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -118,5 +109,8 @@
       <updated>1759358549020</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
 </project>
