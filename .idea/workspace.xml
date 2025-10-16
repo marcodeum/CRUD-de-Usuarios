@@ -4,9 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35c2df5e-c888-48d0-a188-0a470469201d" name="Changes" comment="">
+    <list default="true" id="6c979eef-1e33-448a-b4b7-9c3b2a654843" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/service/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/Launcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/MainApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/controller/UserFormControler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/controller/UserListControler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/model/Pessoa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/model/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/service/DataBaseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/cruddeusuarios/service/UsuarioService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mtpns/cruddeusuarios/user-form-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mtpns/cruddeusuarios/user-list-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +33,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -32,46 +48,52 @@
     </option>
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
+  &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="33U4vPtRaNeOnddTouiEDeDnZeG" />
+  <component name="ProjectId" id="33U4KV5rMvpfTroakufTfB7E2B3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Launcher.executor": "Debug",
-    "Application.Main.executor": "Run",
+    "Application.Launcher.executor": "Run",
+    "Application.com.mtpns.crud_usuarios_java.Launcher.executor": "Run",
     "Maven.CRUD_USUARIOS_JAVA [clean].executor": "Run",
     "Maven.CRUD_USUARIOS_JAVA [install].executor": "Run",
+    "Maven.CRUD_USUARIOS_JAVA [package].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.mtpns.cruddeusuarios" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aluno.senai.pjcn\workspace\CRUD_USUARIOS_JAVA\src\main\java" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mtpns.cruddeusuarios.Launcher" />
+    <configuration name="Launcher" type="Application" factoryName="Application">
+      <option name="envFilePaths">
+        <option value="$PROJECT_DIR$/.env" />
+      </option>
+      <option name="MAIN_CLASS_NAME" value="com.mtpns.crud_usuarios_java.Launcher" />
       <module name="CRUD_USUARIOS_JAVA" />
-      <option name="VM_PARAMETERS" value="--enable-native-access==javafx.graphics" />
+      <option name="VM_PARAMETERS" value="--enable-native-access=javafx.graphics" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mtpns.cruddeusuarios.*" />
+          <option name="PATTERN" value="com.mtpns.crud_usuarios_java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,30 +101,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="CRUD de Usuarios" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="CRUD de Usuarios" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Launcher" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="35c2df5e-c888-48d0-a188-0a470469201d" name="Changes" comment="" />
-      <created>1759358549020</created>
+      <changelist id="6c979eef-1e33-448a-b4b7-9c3b2a654843" name="Changes" comment="" />
+      <created>1759358254945</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1759358549020</updated>
+      <updated>1759358254945</updated>
     </task>
     <servers />
   </component>

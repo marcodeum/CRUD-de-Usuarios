@@ -1,7 +1,7 @@
-package com.mtpns.cruddeusuarios.controller;
+package com.mtpns.crud_usuarios_java.controller;
 
-import com.mtpns.cruddeusuarios.model.Usuario;
-import com.mtpns.cruddeusuarios.service.UsuarioService;
+import com.mtpns.crud_usuarios_java.model.Usuario;
+import com.mtpns.crud_usuarios_java.service.UsuarioService;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
@@ -9,7 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class UserFormControler {
+public class UserFormController {
 
     @FXML
     private Label titleLabel;
@@ -34,17 +34,11 @@ public class UserFormControler {
     private Usuario usuario;
     private UsuarioService usuarioService;
 
-    public void initialize(){
-
-    }
-    public void setStage(){
-
-    }
-    public void setUsuario(){
-
-    }
+    public void initialize(){    }
+    public void setStage(Stage stage){    }
+    public void setUsuario(Usuario usuario){    }
     @FXML
-    public void handleSalvar(){
+    public void handleSalvar(){    }
 
-    }
+
 }

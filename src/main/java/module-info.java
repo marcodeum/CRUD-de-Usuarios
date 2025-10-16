@@ -1,4 +1,4 @@
-module com.mtpns.cruddeusuarios {
+module com.mtpns.crud_usuarios_java {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
@@ -9,9 +9,9 @@ module com.mtpns.cruddeusuarios {
     requires net.synedra.validatorfx;
     requires org.kordamp.bootstrapfx.core;
 
-    opens com.mtpns.cruddeusuarios to javafx.fxml;
-    opens com.mtpns.cruddeusuarios.controller to javafx.fxml;
-    opens com.mtpns.cruddeusuarios.model to javafx.base;
+    opens com.mtpns.crud_usuarios_java to javafx.fxml;
+    opens com.mtpns.crud_usuarios_java.controller to javafx.fxml;
+    opens com.mtpns.crud_usuarios_java.model to javafx.base;
 
-    exports com.mtpns.cruddeusuarios;
+    exports com.mtpns.crud_usuarios_java;
 }

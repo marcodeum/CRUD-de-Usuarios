@@ -1,41 +1,42 @@
-package com.mtpns.cruddeusuarios.model;
-
+package com.mtpns.crud_usuarios_java.model;
 import java.util.Date;
 
-public class Usuario extends Pessoa {
+public class Usuario extends Pessoa{
     private int id;
     private String login;
     private String senha;
     private String email;
 
-    public Usuario(int id, String nome, String sobrenome, Date dataNascimento, String telefone, char sexo, String endereço, String login, String senha, String email)  {
-        super(nome, sobrenome, dataNascimento, telefone, sexo, endereço);
-        this.id = id;
-        this.login = login;
-        this.senha = senha;
-        this.email = email;
-    }
-
-    public Usuario(){
+    public Usuario() {
         super();
         this.id = 0;
         this.login = "";
         this.senha = "";
         this.email = "";
     }
-    public Usuario(String login, String senha, String email, int id) {
-        this.id = id;
+
+    public Usuario(String nome, Date dataNasc) {
+        super(nome, dataNasc);
+        this.id = 0;
+        this.login = "";
+        this.senha = "";
+        this.email = "";
+    }
+
+    public Usuario(String nome, String sobrenome, Date dataNasc, String telefone, char sexo, String endereco, String login, String senha, String email) {
+        super(nome, sobrenome, dataNasc, telefone, sexo, endereco);
+        this.id = 0;
         this.login = login;
         this.senha = senha;
         this.email = email;
     }
 
-    public void setId(int id) {
+    public void setId(int id){
         this.id = id;
     }
 
-    public int getId() {
-        return id;
+    public int getId(){
+        return this.id;
     }
 
     public String getLogin() {
@@ -46,7 +47,7 @@ public class Usuario extends Pessoa {
         this.login = login;
     }
 
-    public void setSenha(String senha) {
+    public void setSenha(String senha){
         this.senha = senha;
     }
 
@@ -61,4 +62,5 @@ public class Usuario extends Pessoa {
     public boolean isEqual(String senha){
         return senha.equals(this.senha);
     }
+
 }
