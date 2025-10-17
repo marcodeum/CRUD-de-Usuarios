@@ -24,6 +24,7 @@
     </Label><TableView fx:id="tableView" VBox.vgrow="ALWAYS">
         <columns>
             <TableColumn fx:id="colNome" prefWidth="180.0" text="Nome"/>
+            <TableColumn fx:id="colIdade" prefWidth="180.0" text="Idade"/>
             <TableColumn fx:id="colLogin" prefWidth="180.0" text="Login"/>
 <!--            <TableColumn fx:id="colTelefone" prefWidth="180.0" text="Telefone"/>-->
 <!--            <TableColumn fx:id="colSobrenome" prefWidth="180.0" text="Sobrenome"/>-->

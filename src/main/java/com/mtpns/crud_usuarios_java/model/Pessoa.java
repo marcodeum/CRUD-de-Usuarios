@@ -1,4 +1,7 @@
 package com.mtpns.crud_usuarios_java.model;
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.ZoneId;
 import java.util.Date;
 
 public class Pessoa {
@@ -91,4 +94,16 @@ public class Pessoa {
         this.endereco = endereco;
     }
 
+
+    public int getIdade() {
+        if (this.dataNascimento == null) {
+            return 0;
+        }
+        LocalDate dataNascimento2 = this.dataNascimento.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+
+        LocalDate hj = LocalDate.now();
+
+        Period period = Period.between(dataNascimento2, hj);
+
+    return period.getYears();}
 }

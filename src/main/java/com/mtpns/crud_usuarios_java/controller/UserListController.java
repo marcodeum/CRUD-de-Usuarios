@@ -23,6 +23,8 @@ public class UserListController {
     private TableView<Usuario> tableView;
     @FXML
     private TableColumn<Usuario, String> colNome;
+    @FXML
+    private TableColumn<Usuario, Integer> colIdade;
 //    @FXML
 //    private TableColumn<Usuario, String> colSobrenome;
 //    @FXML
@@ -75,6 +77,7 @@ public class UserListController {
     public void carregarDadosTabela(){
         usuarioService.isDbloaded();
             colNome.setCellValueFactory(new PropertyValueFactory<>("nome"));
+        colIdade.setCellValueFactory(new PropertyValueFactory<>("idade"));
            // colSobrenome.setCellValueFactory(new PropertyValueFactory<>("sobrenome"));
             //colEmail.setCellValueFactory(new PropertyValueFactory<>("email"));
             //colTelefone.setCellValueFactory(new PropertyValueFactory<>("telefone"));
