@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c979eef-1e33-448a-b4b7-9c3b2a654843" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.bkp_db/crud_usuarios_java_usuarios.sql" beforeDir="false" afterPath="$PROJECT_DIR$/.bkp_db/crud_usuarios_java_usuarios.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/crud_usuarios_java/controller/UserFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtpns/crud_usuarios_java/controller/UserFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/crud_usuarios_java/controller/UserListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtpns/crud_usuarios_java/controller/UserListController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/crud_usuarios_java/model/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtpns/crud_usuarios_java/model/Pessoa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/crud_usuarios_java/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtpns/crud_usuarios_java/model/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtpns/crud_usuarios_java/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtpns/crud_usuarios_java/service/UsuarioService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/mtpns/crud_usuarios_java/user-list-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mtpns/crud_usuarios_java/user-list-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

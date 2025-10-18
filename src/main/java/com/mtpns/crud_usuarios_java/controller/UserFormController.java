@@ -11,6 +11,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.sql.Date;
+import java.time.LocalDate;
 import java.time.ZoneId;
 
 public class UserFormController {
@@ -28,7 +29,7 @@ public class UserFormController {
     @FXML
     private TextField telefoneField;
     @FXML
-    private DatePicker dataNascimentoPicker;
+    private DatePicker dataNascPicker;
     @FXML
     private ChoiceBox<String> sexoChoiceBox;
     @FXML
@@ -54,8 +55,8 @@ public class UserFormController {
             sobrenomeField.setText(usuario.getSobrenome());
             emailField.setText(usuario.getEmail());
             loginField.setText(usuario.getLogin());
-            if (usuario.getDataNascimento() != null){
-                dataNascimentoPicker.setValue(usuario.getDataNascimento().toInstant().atZone(ZoneId.systemDefault()).toLocalDate());
+            if (usuario.getdataNasc() != null){
+                dataNascPicker.setValue(usuario.getdataNasc());
             }
             telefoneField.setText(usuario.getTelefone());
             sexoChoiceBox.setValue(usuario.getSexo() == 'M'?"Masculino":"Femenino");
@@ -74,8 +75,8 @@ public class UserFormController {
         usuario.setSobrenome(nomeField.getText());
         usuario.setEmail(nomeField.getText());
         usuario.setLogin(nomeField.getText());
-        if (dataNascimentoPicker.getValue() != null){
-            usuario.setDataNascimento(Date.from(dataNascimentoPicker.getValue().atStartOfDay(ZoneId.systemDefault()).toInstant()));
+        if (dataNascPicker.getValue() != null){
+            usuario.setdataNasc(LocalDate.from(dataNascPicker.getValue()));
         }
         usuario.setTelefone(telefoneField.getText());
         usuario.setEndereco(enderecoField.getText());

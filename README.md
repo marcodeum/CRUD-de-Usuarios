@@ -24,7 +24,7 @@ CREATE TABLE usuarios (
 	id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100),
     sobrenome VARCHAR(100),
-    dataNascimento DATE,
+    dataNasc DATE,
     telefone VARCHAR(255),
     sexo CHAR(1),
     endereco VARCHAR(255),

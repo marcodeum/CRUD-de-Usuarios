@@ -24,13 +24,7 @@ public class UserListController {
     @FXML
     private TableColumn<Usuario, String> colNome;
     @FXML
-    private TableColumn<Usuario, Integer> colIdade;
-//    @FXML
-//    private TableColumn<Usuario, String> colSobrenome;
-//    @FXML
-//    private TableColumn<Usuario, String> colEmail;
-//    @FXML
-//    private TableColumn<Usuario, String> colTelefone;
+    private TableColumn<Usuario, String> colIdade;
     @FXML
     private TableColumn<Usuario, String> colLogin;
     @FXML
@@ -58,42 +52,36 @@ public class UserListController {
             syncButton.setText("refresh");
             syncButton.setDisable(true);
             syncButton.setVisible(false);
-
-        }else{
+        } else{
             statusLabel.setText("DB Status: offline");
             statusLabel.setStyle("-fx-text-fill: red");
             syncButton.setText("retry");
             syncButton.setDisable(false);
             syncButton.setVisible(true);
-
         }
     }
     @FXML
     public void handleSincronizar(){
         usuarioService.sincronizarComBanco();
         carregarDadosTabela();
+
     }
 
     public void carregarDadosTabela(){
-        usuarioService.isDbloaded();
-            colNome.setCellValueFactory(new PropertyValueFactory<>("nome"));
+        colNome.setCellValueFactory(new PropertyValueFactory<>("nome"));
+        colLogin.setCellValueFactory(new PropertyValueFactory<>("login"));
         colIdade.setCellValueFactory(new PropertyValueFactory<>("idade"));
-           // colSobrenome.setCellValueFactory(new PropertyValueFactory<>("sobrenome"));
-            //colEmail.setCellValueFactory(new PropertyValueFactory<>("email"));
-            //colTelefone.setCellValueFactory(new PropertyValueFactory<>("telefone"));
-            colLogin.setCellValueFactory(new PropertyValueFactory<>("login"));
-
-            obsUsuario = FXCollections.observableArrayList(usuarioService.listarUsuarios());
-            tableView.setItems(obsUsuario);
-            adicionarBotoesDeAcao();
-            atualizarStatusConexao();
+        obsUsuario = FXCollections.observableArrayList(usuarioService.listarUsuarios());
+        tableView.setItems(obsUsuario);
+        adicionarBotoesDeAcao();
+        atualizarStatusConexao();
     }
 
     public void adicionarBotoesDeAcao(){
         colAcoes.setCellFactory(pram -> new TableCell<>() {
-           private final Button btnEditar = new Button("Editar");
-           private final Button btnExcluir = new Button("Excluir");
-           private final HBox panel = new HBox(5,btnEditar,btnExcluir);
+            private final Button btnEditar = new Button("Editar");
+            private final Button btnExcluir = new Button("Excluir");
+            private final HBox panel = new HBox(5,btnEditar,btnExcluir);
             {
                 btnEditar.setOnAction(event ->{
                     Usuario usuario = getTableView().getItems().get(getIndex());
@@ -105,39 +93,31 @@ public class UserListController {
                     carregarDadosTabela();
                 });
             }
-
             @Override
             protected void updateItem(Void item, boolean empty){
                 super.updateItem(item,empty);
                 setGraphic(empty ? null : panel);
             }
-
         });
     }
-
     @FXML
-    public void handleAdicionarUsuario(){
+    public void handleAdicionarUsuario() {
         abrirFormularioUsuario(null);
     }
-
     public void abrirFormularioUsuario(Usuario usuario){
-        try {
+        try{
             FXMLLoader loader = new FXMLLoader(MainApplication.class.getResource("user-form-view.fxml"));
             Stage stage = new Stage();
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.setScene(new Scene(loader.load()));
-
-            UserFormController controller = new getController();
+            UserFormController controller = loader.getController();
             controller.setUsuario(usuario);
             controller.setStage(stage);
             stage.showAndWait();
             carregarDadosTabela();
-
         }catch (IOException e){
             e.printStackTrace();
         }
     }
 
-    private class getController extends UserFormController {
-    }
 }

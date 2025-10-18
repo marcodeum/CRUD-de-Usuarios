@@ -26,7 +26,7 @@ CREATE TABLE `usuarios` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) DEFAULT NULL,
   `sobrenome` varchar(100) DEFAULT NULL,
-  `dataNascimento` date DEFAULT NULL,
+  `dataNasc` date DEFAULT NULL,
   `telefone` varchar(255) DEFAULT NULL,
   `sexo` char(1) DEFAULT NULL,
   `endereco` varchar(255) DEFAULT NULL,
