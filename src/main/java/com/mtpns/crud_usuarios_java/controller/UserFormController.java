@@ -16,81 +16,76 @@ import java.time.ZoneId;
 
 public class UserFormController {
 
-    @FXML
-    private Label titleLabel;
-    @FXML
-    private TextField nomeField;
-    @FXML
-    private TextField sobrenomeField;
-    @FXML
-    private TextField emailField;
-    @FXML
-    private TextField loginField;
-    @FXML
-    private TextField telefoneField;
-    @FXML
-    private DatePicker dataNascPicker;
-    @FXML
-    private ChoiceBox<String> sexoChoiceBox;
-    @FXML
-    private TextField enderecoField;
+    @FXML private Label titleLabel;
+    @FXML private TextField nomeField;
+    @FXML private TextField sobrenomeField;
+    @FXML private TextField emailField;
+    @FXML private TextField loginField;
+    @FXML private DatePicker dataNascimentoPicker;
+    @FXML private TextField telefoneField;
+    @FXML private ChoiceBox<String> sexoChoiceBox;
+    @FXML private TextField enderecoField;
+
 
     private Stage stage;
     private Usuario usuario;
     private UsuarioService usuarioService;
 
-    public void initialize(){
+    public void initialize() {
         usuarioService = new UsuarioService();
-        sexoChoiceBox.setItems(FXCollections.observableArrayList("Masculino", "Femenino"));
+        sexoChoiceBox.setItems(FXCollections.observableArrayList("Masculino", "Feminino"));
     }
-    public void setStage(Stage stage){
+
+    public void setStage(Stage stage) {
         this.stage = stage;
     }
-    public void setUsuario(Usuario usuario){
-        this.usuario = usuario;
 
-        if (usuario != null){
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+        if (usuario != null) {
             titleLabel.setText("Editar Usuário");
             nomeField.setText(usuario.getNome());
             sobrenomeField.setText(usuario.getSobrenome());
             emailField.setText(usuario.getEmail());
             loginField.setText(usuario.getLogin());
-            if (usuario.getdataNasc() != null){
-                dataNascPicker.setValue(usuario.getdataNasc());
+            if (usuario.getdataNasc() != null) {
+                dataNascimentoPicker.setValue(usuario.getdataNasc());
             }
             telefoneField.setText(usuario.getTelefone());
-            sexoChoiceBox.setValue(usuario.getSexo() == 'M'?"Masculino":"Femenino");
+            sexoChoiceBox.setValue(usuario.getSexo() == 'M' ? "Masculino" : "Feminino");
             enderecoField.setText(usuario.getEndereco());
-        }else {
+        } else {
             titleLabel.setText("Adicionar Usuário");
         }
     }
+
     @FXML
-    public void handleSalvar(){
+    private void handleSalvar() {
         boolean isNew = (usuario == null);
-        if (isNew){
+        if (isNew) {
             usuario = new Usuario();
         }
+
         usuario.setNome(nomeField.getText());
-        usuario.setSobrenome(nomeField.getText());
-        usuario.setEmail(nomeField.getText());
-        usuario.setLogin(nomeField.getText());
-        if (dataNascPicker.getValue() != null){
-            usuario.setdataNasc(LocalDate.from(dataNascPicker.getValue()));
+        usuario.setSobrenome(sobrenomeField.getText());
+        usuario.setEmail(emailField.getText());
+        usuario.setLogin(loginField.getText());
+        if (dataNascimentoPicker.getValue() != null) {
+            usuario.setDataNasc(dataNascimentoPicker.getValue());
         }
         usuario.setTelefone(telefoneField.getText());
-        usuario.setEndereco(enderecoField.getText());
-        if (sexoChoiceBox.getValue() != null){
-            usuario.setSexo(sexoChoiceBox.getValue().equals("Masculino")?'M':'F');
+        if (sexoChoiceBox.getValue() != null) {
+            usuario.setSexo(sexoChoiceBox.getValue().equals("Masculino") ? 'M' : 'F');
         }
-        if (isNew){
+        usuario.setEndereco(enderecoField.getText());
+
+        if (isNew) {
             usuarioService.adicionarUsuario(usuario);
-            usuarioService.adicionarUsuario(usuario);
-            usuarioService.adicionarUsuario(usuario);
-            usuarioService.adicionarUsuario(usuario);
-            usuarioService.adicionarUsuario(usuario);
-        }else {
+        } else {
             usuarioService.atualizarUsuario(usuario);
         }
+
+        stage.close();
+
     }
 }
